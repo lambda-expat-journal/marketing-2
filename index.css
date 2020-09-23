@@ -17,15 +17,22 @@
   header {
     background-color: rgb(62, 214, 189);
     display: flex;
-    flex-direction: column;
     padding: 25px 0px;
-    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  header i{
+    width: 5%;
+    Margin: 0px 30px;
+    justify-content: center;
   }
   
   
   header nav {
     display: flex;
     width: 35%;
+    align-items: center;
+    /* justify-content: flex-end; */
   }
   
   header nav a {
@@ -48,10 +55,12 @@
     .bgImg {
     background-image: url(https://www.thehotelguru.com/_images/36/0d/360d6144d6d0c95f090b39c147ae5271/zante-s1180x560.jpg);
     background-size: cover;
+    background-attachment: fixed;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
@@ -59,6 +68,16 @@
 
   .bgImg h1{
       color: white;
+  }
+
+  .bgImg button {
+    padding: 20px;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: #b3ecec;
+  }
+  .bgImg a {
+    margin: 45px;
   }
 
   
@@ -144,6 +163,7 @@
       background: #10566b;
       padding: 10px;
       margin-bottom: 30px;
+      border-radius: 10%;
   }
 
   .rowOne,
@@ -158,9 +178,8 @@
     width: 100%;
     background: #10566b;
     padding: 10px;
+    border-radius: 10%;
   }
-
-  .row
   
   .rowOne > *,
   .rowTwo > * {
@@ -173,6 +192,7 @@
     width: 250px;
     height: 250px;
     border: 2px solid #10566b;
+    border-radius: 20%;
   }
   
   .footer {
@@ -201,17 +221,31 @@
       width: 100%;
     }
     header {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
       width: 100%;
       background-color:#2ca7cc; 
     }
     header h1 {
       text-align: center;
     }
+    header i{
+        display: flex;
+        justify-content: center;
+    }
     nav {
+        display:flex;
       flex-direction: column;
+      justify-content: center;
       margin: 0 auto;
       width: 50%;
     }
+   .header nav a{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
     
     .headWrapper {
       align-items: center;
