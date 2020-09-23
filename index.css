@@ -121,7 +121,7 @@
   .features h2{
       display:flex;
       width:100%;
-      padding: 20px;
+      padding: 60px;
       justify-content: center;
       align-items: center;
       font-size: 3rem;
@@ -143,7 +143,7 @@
   .featureSide > * {
     display:flex;
   margin-bottom: 5px;
-  width: 60%;
+  width: 70%;
   align-items: center;
   font-size: 1.5rem;;
 }
@@ -216,7 +216,21 @@
     margin: 45px;
   }
   @media(max-width:1486px){
-  
+  body{
+      width: 100%;
+  }
+    .featureSide > * {
+        display: flex;
+        margin-bottom: 5px;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .featureSide p{
+        width: 100%;
+    }
 
 
 
